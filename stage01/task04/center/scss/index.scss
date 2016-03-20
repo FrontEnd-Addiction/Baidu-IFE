@@ -1,0 +1,40 @@
+$rectWidth: 400px;
+$rectHeight: 200px;
+$circleRadius: 50px;
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: $rectWidth;
+  height: $rectHeight;
+  margin: auto;
+  background: #ccc;
+  overflow: hidden;
+
+  &::before, &::after {
+    position: absolute;
+    width: $circleRadius * 2;
+    height: $circleRadius * 2;
+    background: #fc0;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &::before {
+    top: -$circleRadius;
+    left: -$circleRadius;
+  }
+
+  &::after {
+    bottom: -$circleRadius;
+    right: -$circleRadius;
+  }
+}

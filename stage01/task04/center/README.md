@@ -1,5 +1,4 @@
-<p data-height="300" data-theme-id="13109" data-slug-hash="wGJJzq" data-default-tab="result" data-user="Lmovingon" class="codepen">See the Pen <a href="http://codepen.io/Lmovingon/pen/wGJJzq/">wGJJzq</a> by JasonLiao (<a href="http://codepen.io/Lmovingon">@Lmovingon</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+[Demo](http://codepen.io/Lmovingon/pen/wGJJzq)
 
 ## Containing Block
 
