@@ -1,0 +1,23 @@
+@import "./grid"
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+div:not(.row) {
+  background: #eee;
+  border-radius: 4px;
+  color: #777;
+  text-align: center;
+  min-height: 30px;
+}
+
+section {
+  background: #666;
+  min-height: 30px;
+  border: 1px solid #eee;
+}

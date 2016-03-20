@@ -1,0 +1,54 @@
+$grid-columns: 12;
+$gutter-width: 15px;
+
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: '';
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin make-column($type: 'xs') {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+}
+
+// column common style
+[class^=col-] {
+  padding: 0 $gutter-width;
+  // position: relative;
+  float: left;
+}
+
+.row {
+  // fullfil the container
+  margin-left: -$gutter-width;
+  margin-right: -$gutter-width;
+
+  @include clearfix;
+}
+
+@media (min-width: $screen-xs-min) {
+  @include make-column();
+}
+@media (min-width: $screen-sm-min) {
+  @include make-column('sm');
+}
+@media (min-width: $screen-md-min) {
+  @include make-column('md');
+}
+@media (min-width: $screen-lg-min) {
+  @include make-column('lg')
+}
