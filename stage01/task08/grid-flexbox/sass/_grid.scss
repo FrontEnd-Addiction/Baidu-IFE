@@ -1,0 +1,99 @@
+// container
+.container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+.container-fixed {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include screen-xs {
+    width: $screen-xs-min;
+  }
+  @include screen-sm {
+    width: $screen-sm-min;
+  }
+  @include screen-md {
+    width: $screen-md-min;
+  }
+  @include screen-lg {
+    width: $screen-lg-min;
+  }
+}
+
+// row
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -$grid-gutter-width;
+  margin-right: -$grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
+}
+
+.row-top {
+  @extend .row;
+  align-items: flex-start;
+}
+.row-middle {
+  @extend .row;
+  align-items: center;
+}
+.row-bottom {
+  @extend .row;
+  align-items: flex-end;
+}
+.row-stretch {
+  @extend .row;
+  align-items: stretch;
+}
+.row-base {
+  @extend .row;
+  align-items: baseline;
+}
+
+// horizontally
+.row-left {
+  @extend .row;
+  justify-content: flex-start;
+}
+.row-center {
+  @extend .row;
+  justify-content: center;
+}
+.row-right {
+  @extend .row;
+  justify-content: flex-end;
+}
+.row-between {
+  @extend .row;
+  justify-content: space-between;
+}
+.row-around {
+  @extend .row;
+  justify-content: space-around;
+}
+
+
+// columns
+[class^=col-] {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+
+  flex: 1;
+  display: flex;
+}
+
+@include screen-xs {
+  @include make-columns();
+};
+@include screen-sm {
+  @include make-columns('sm');
+};
+@include screen-md {
+  @include make-columns('md');
+};
+@include screen-lg {
+  @include make-columns('lg');
+};
