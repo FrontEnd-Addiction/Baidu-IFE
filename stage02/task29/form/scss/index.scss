@@ -18,32 +18,36 @@ input[name="name"] {
 	border-radius: 5px;
 	box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.1);
 	outline: none;
+  transition: all 0.3s ease-in-out;
 	
 	&.errorInput {
 		border: 1px solid $tipsError;
+    box-shadow: 0 0 5px rgba($tipsError, 1);
 	}
 	
 	&.correctInput {
 		border: 1px solid $tipsCorrect;
+    box-shadow: 0 0 5px rgba($tipsCorrect, 1);
 	}
 }
 
 #match {
 	width: 55px;
 	height: 36px;
+  border: 1px solid $buttonBorder;
+	border-radius: 5px;
 	background: $buttonColor;
 	color: #fff;
-	border: 1px solid $buttonBorder;
-	border-radius: 5px;
 	outline: none;
 	cursor: pointer;
 }
 
-.tips {
+#tips {
 	margin: 5px 0 0 55px;
 	color: $tipsColor;
 	font-size: 80%;
-		
+  transition: all 0.3s ease-in-out;
+  
 	&.errorTips {
 		color: $tipsError;
 	}
