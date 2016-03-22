@@ -1,0 +1,41 @@
+body, html {
+  box-sizing: border-box; }
+
+input[name="name"] {
+  width: 250px;
+  height: 20px;
+  padding: 8px;
+  border: 1px solid #AEAEAE;
+  margin: 0 5px 0 20px;
+  border-radius: 5px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease-in-out; }
+  input[name="name"].errorInput {
+    border: 1px solid #DE000F;
+    box-shadow: 0 0 5px #de000f; }
+  input[name="name"].correctInput {
+    border: 1px solid #61BA46;
+    box-shadow: 0 0 5px #61ba46; }
+
+#match {
+  width: 55px;
+  height: 36px;
+  border: 1px solid #2A6CA8;
+  border-radius: 5px;
+  background: #2F79BA;
+  color: #fff;
+  outline: none;
+  cursor: pointer; }
+
+#tips {
+  margin: 5px 0 0 55px;
+  color: #AEAEAE;
+  font-size: 80%;
+  transition: all 0.3s ease-in-out; }
+  #tips.errorTips {
+    color: #DE000F; }
+  #tips.correctTips {
+    color: #61BA46; }
+
+/*# sourceMappingURL=index.css.map */
