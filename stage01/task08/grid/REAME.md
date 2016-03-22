@@ -8,10 +8,10 @@
 ## Demo
 https://jsfiddle.net/DrakeLeung/76buggnx/
 
-Usage
-1. Install sass
+## Usage
+1. install [sass](http://sass-lang.com/install)
 2. `cd` to `grid/`
-3. run: sass --watch ./sass/app.scss:./css/app.css
+3. run: `sass --watch ./sass/app.scss:./css/app.css`
 4. and open `inde.html` in the browser
 
 ## Implement with
