@@ -1,0 +1,28 @@
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin screen-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin screen-xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+@mixin make-columns($type: 'xs') {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      flex: 0 0 percentage($i / $grid-columns);
+    }
+  }
+}

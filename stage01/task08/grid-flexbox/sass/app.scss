@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+@import "grid";
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 30px;
+  // line-height: 30px;
+  // text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.row > [class^=col-]:nth-child(1) {
+  background: #487E88;
+}
+.row > [class^=col-]:nth-child(2) {
+  background: #DD7D73;
+}
+.row > [class^=col-]:nth-child(3) {
+  background: #57A769;
+}
