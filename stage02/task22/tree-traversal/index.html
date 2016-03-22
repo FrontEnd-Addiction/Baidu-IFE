@@ -6,11 +6,27 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <canvas class="my-canvas">
-    Your Browser doesn't support canvas :(
-  </canvas>
+  <main></main>
+  <ul class="choices">
+    <li>
+      <input type="radio" id="preOrder" name="choice" checked>
+      <label for="preOrder">前序</label>
+    </li>
 
-  <script src="js/draw.js"></script>
+    <li>
+      <input type="radio" id="inOrder" name="choice">
+      <label for="inOrder">中序</label>
+    </li>
+
+    <li>
+      <input type="radio" id="postOrder" name="choice">
+      <label for="postOrder">后序</label>
+    </li>
+  </ul>
+  <button id="traversing">开始遍历</button>
+  <button id="reset">重新开始</button>
+
+  <script src="js/util.js"></script>
   <script src="js/tree.js"></script>
   <script src="js/app.js"></script>
 </body>

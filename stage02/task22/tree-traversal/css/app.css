@@ -1,2 +1,20 @@
-canvas {
+.node {
+  border: 1px solid #666;
+  min-height: 30px;
+  padding: 10px 5px;
+  margin: 2px;
+  background: #fff;
+
+  display: flex;
+  flex: 1;
+}
+
+.node.active {
+  background: pink;
+  transition: background-color 1s;
+}
+
+.node.done {
+  background: #abcdef;
+  transition: background-color 1s;
 }
