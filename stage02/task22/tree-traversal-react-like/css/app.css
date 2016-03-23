@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  color: #212121;
+  background: #eee;
+}
+
+.toolbar {
+  text-align: center;
+  margin: 2rem;
+}
+
+ul.choice-list {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  font-size: 2rem;
+}
+
+li.choice-item {
+  display: inline-block;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+label::before {
+  content: '';
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #aaa;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+
+input[type=radio]:checked + label:before {
+  content: "\2022"; /* bullet */
+  color: #009688;
+  font-size: 30px;
+  text-align: center;
+  line-height: 16px;
+}
+
+input[type=radio] {
+  visibility: hidden;
+}
+
+button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  border: none;
+
+  background: #009688;
+  color: #FFF;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.tree {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.node {
+  border: 1px solid #455A64;
+  min-height: 1rem;
+  padding: 1rem .5rem;
+  margin: 2px;
+  background: #fff;
+
+  display: flex;
+  flex: 1;
+}
+
+.node.active {
+  background: #F8BBD0;
+  transition: background-color 1s;
+}
+
+.node.done {
+  background: #BBDEFB;
+  transition: background-color 1s;
+}
