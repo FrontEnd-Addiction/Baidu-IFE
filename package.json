@@ -1,0 +1,21 @@
+{
+  "name": "Baidu-IFE",
+  "version": "1.0.0",
+  "description": "2016百度前端技术学院 - 「前端患者」队伍",
+  "main": "index.js",
+  "scripts": {
+    "gh-pages": "git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontEnd-Addiction/Baidu-IFE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrontEnd-Addiction/Baidu-IFE/issues"
+  },
+  "homepage": "https://github.com/FrontEnd-Addiction/Baidu-IFE#readme"
+}
