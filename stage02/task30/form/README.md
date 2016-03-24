@@ -1,4 +1,4 @@
-[Demo](http://codepen.io/Lmovingon/pen/KzmNwb?editors=1010)
+[Demo](http://frontend-addiction.github.io/Baidu-IFE/stage02/task30/form/)
 
 ## Some Note
 
