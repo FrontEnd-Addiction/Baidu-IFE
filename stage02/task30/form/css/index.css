@@ -1,0 +1,61 @@
+body, html {
+  box-sizing: border-box; }
+
+#form {
+  width: 420px;
+  overflow: hidden; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  ul li {
+    margin: 15px; }
+    ul li label span {
+      display: inline-block;
+      width: 70px;
+      text-align: right; }
+    ul li label input {
+      width: 270px;
+      height: 15px;
+      padding: 8px;
+      border: 1px solid #AEAEAE;
+      margin: 0 0 0 20px;
+      border-radius: 5px;
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+      outline: none;
+      transition: all 0.3s ease-in-out; }
+      ul li label input.inputFocus {
+        border: 1px solid #62AEEC;
+        box-shadow: 0 0 5px #62aeec; }
+      ul li label input.errorInput {
+        border: 1px solid #DE000F;
+        box-shadow: 0 0 5px #de000f; }
+      ul li label input.correctInput {
+        border: 1px solid #61BA46;
+        box-shadow: 0 0 5px #61ba46; }
+
+#submit {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #2A6CA8;
+  margin-right: 23px;
+  border-radius: 5px;
+  background: #2F79BA;
+  float: right;
+  color: #fff;
+  outline: none;
+  cursor: pointer; }
+
+.tips {
+  display: none;
+  margin: 5px 0 0px 95px;
+  color: #AEAEAE;
+  font-size: 80%;
+  transition: all 0.3s ease-in-out; }
+  .tips.errorTips {
+    color: #DE000F; }
+  .tips.correctTips {
+    color: #61BA46; }
+
+/*# sourceMappingURL=index.css.map */

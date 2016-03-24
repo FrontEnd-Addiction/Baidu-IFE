@@ -1,0 +1,92 @@
+$buttonColor: #2F79BA;
+$buttonBorder: #2A6CA8;
+
+$tipsColor: #AEAEAE;
+$tipsError: #DE000F;
+$tipsCorrect: #61BA46;
+
+$inputFocusColor: #62AEEC;
+
+body, html {
+	box-sizing: border-box;
+}
+
+#form {
+  width: 420px;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  li {
+    margin: 15px;
+    
+    label {
+      span {
+        display: inline-block;
+        width: 70px;
+        text-align: right;
+      }
+      
+      input {
+        width: 270px;
+        height: 15px;
+        padding: 8px;
+        border: 1px solid $tipsColor;
+        margin: 0 0 0 20px;
+        border-radius: 5px;
+        box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.1);
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        
+        &.inputFocus {
+          border: 1px solid $inputFocusColor;
+          box-shadow: 0 0 5px rgba($inputFocusColor, 1);
+        }
+
+        &.errorInput {
+          border: 1px solid $tipsError;
+          box-shadow: 0 0 5px rgba($tipsError, 1);
+        }
+
+        &.correctInput {
+          border: 1px solid $tipsCorrect;
+          box-shadow: 0 0 5px rgba($tipsCorrect, 1);
+        }
+      }
+    }
+  }
+}
+
+
+#submit {
+	width: 80px;
+	height: 30px;
+  border: 1px solid $buttonBorder;
+  margin-right: 23px;
+	border-radius: 5px;
+	background: $buttonColor;
+  float: right;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+.tips {
+  display: none;
+	margin: 5px 0 0px 95px;
+	color: $tipsColor;
+	font-size: 80%;
+  transition: all 0.3s ease-in-out;
+  
+	&.errorTips {
+		color: $tipsError;
+	}
+	
+	&.correctTips {
+		color: $tipsCorrect;
+	}
+}
