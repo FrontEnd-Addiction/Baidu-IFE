@@ -36,7 +36,6 @@ var eventOperation = {
   blurCheck: function (input) {
     var tips = input.parentElement.nextElementSibling;
     switch (input.name) {
-      
       case 'name':
         util.nameCheck(input, tips);
         break;
