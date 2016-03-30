@@ -58,6 +58,9 @@ function isStudentToggle (isStudent) {
 }
 
 function locationList () {
+  schoolsListUl.innerHTML = '';
+  schoolsListUl.style.display = 'none';
+
   var fragment = document.createDocumentFragment(),
       i;
   
@@ -73,6 +76,9 @@ function locationList () {
 }
 
 function schoolsList () {
+  locationListUl.innerHTML = '';
+  locationListUl.style.display = 'none';
+
   var fragment = document.createDocumentFragment(),
       location = document.querySelector('input[name="location"]').value,
       schoolsArr = school.filter(function (obj) {
