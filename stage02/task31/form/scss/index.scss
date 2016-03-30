@@ -1,0 +1,134 @@
+.form {
+  list-style: none;
+  padding: 0;
+  width: 600px;
+  margin: 20px auto;
+  
+  li {
+    margin: 10px;
+    position: relative;
+    
+    &:first-child {
+      label:last-child {
+        .radio {
+          margin-left: 150px;
+        }
+      }
+    }
+    
+    &#company {
+      display: none;
+    }
+  }
+  
+  label {
+    font-size: 110%;
+    
+    input[type="radio"] {
+      display: none;
+      
+      &:checked ~ .radio {
+        background: #fff;
+        box-shadow: none;
+        width: 8px; height: 8px;
+        border: 6px solid #2787F1;
+        box-shadow: inset 0px 1px 2px #ddd;
+      }
+    }
+    
+    .arrow {
+      position: relative;
+      
+      &:before, &:after {
+        position: absolute;
+        display: block;
+        right: 19px;
+        color: #535353;
+        font-size: 70%;
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
+      &:before {
+        content: '▲';
+        top: -1px;
+      }
+      
+      &:after {
+        content: '▼';
+        top: 9px;
+      }
+      
+    }
+    
+    input[type="text"] {
+      height: 16px;
+      padding: 8px;
+      font-size: 90%;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #CDCDCD;
+      box-shadow: inset 0px 1px 2px #ddd;
+      margin: 15px;
+
+      &:focus {
+        border: 1px solid #2787F1;
+        box-shadow: 0px 0px 5px #2787F1;
+      }
+
+    }
+
+    input[name="location"] {
+      width: 150px;
+    }
+
+    input[name="school"] {
+      width: 240px;
+    }
+
+    input[name="company"] {
+      width: 442px
+    }
+    
+    .radio {
+      margin: 5px 10px -4px 95px;
+      display: inline-block;
+      width: 18px; height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #CDCDCD;
+      box-shadow: inset 0px 1px 2px #ddd;
+      line-height: 20px;
+    }
+
+  }
+  
+  .locationList, .schoolsList {
+    display: inline-block;
+    position: absolute;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid #2787F1;
+    box-shadow: 0px 0px 5px #2787F1;
+    border-radius: 5px;
+    display: none;
+    
+    & li {
+      padding: 5px 10px;
+      margin: 0;
+    }
+  }
+  
+  .locationList {
+    top: 55px; left: 90px; 
+    width: 166px; 
+  }
+  
+  .schoolsList { 
+    top: 55px; left: 292px;
+    width: 258px;
+  }
+
+}

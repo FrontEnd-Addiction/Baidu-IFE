@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.form {
+  list-style: none;
+  padding: 0;
+  width: 600px;
+  margin: 20px auto; }
+  .form li {
+    margin: 10px;
+    position: relative; }
+    .form li:first-child label:last-child .radio {
+      margin-left: 150px; }
+    .form li#company {
+      display: none; }
+  .form label {
+    font-size: 110%; }
+    .form label input[type="radio"] {
+      display: none; }
+      .form label input[type="radio"]:checked ~ .radio {
+        background: #fff;
+        box-shadow: none;
+        width: 8px;
+        height: 8px;
+        border: 6px solid #2787F1;
+        box-shadow: inset 0px 1px 2px #ddd; }
+    .form label .arrow {
+      position: relative; }
+      .form label .arrow:before, .form label .arrow:after {
+        position: absolute;
+        display: block;
+        right: 19px;
+        color: #535353;
+        font-size: 70%; }
+        .form label .arrow:before:hover, .form label .arrow:after:hover {
+          cursor: pointer; }
+      .form label .arrow:before {
+        content: '▲';
+        top: -1px; }
+      .form label .arrow:after {
+        content: '▼';
+        top: 9px; }
+    .form label input[type="text"] {
+      height: 16px;
+      padding: 8px;
+      font-size: 90%;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #CDCDCD;
+      box-shadow: inset 0px 1px 2px #ddd;
+      margin: 15px; }
+      .form label input[type="text"]:focus {
+        border: 1px solid #2787F1;
+        box-shadow: 0px 0px 5px #2787F1; }
+    .form label input[name="location"] {
+      width: 150px; }
+    .form label input[name="school"] {
+      width: 240px; }
+    .form label input[name="company"] {
+      width: 442px; }
+    .form label .radio {
+      margin: 5px 10px -4px 95px;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #CDCDCD;
+      box-shadow: inset 0px 1px 2px #ddd;
+      line-height: 20px; }
+  .form .locationList, .form .schoolsList {
+    display: inline-block;
+    position: absolute;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid #2787F1;
+    box-shadow: 0px 0px 5px #2787F1;
+    border-radius: 5px;
+    display: none; }
+    .form .locationList li, .form .schoolsList li {
+      padding: 5px 10px;
+      margin: 0; }
+  .form .locationList {
+    top: 55px;
+    left: 90px;
+    width: 166px; }
+  .form .schoolsList {
+    top: 55px;
+    left: 292px;
+    width: 258px; }
+
+/*# sourceMappingURL=index.css.map */

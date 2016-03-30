@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baidu-IFE Stage02 Task31</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <ul class="form">
+    <li id="isStudent">
+      <label>
+        <input type="radio" name="student" value="true" checked>
+        <span class="radio"></span>在校生
+      </label>
+      <label>
+        <input type="radio" name="student" value="false">
+        <span class="radio"></span>非在校生
+      </label>
+    </li>
+    <li id="location-school">
+      <label>　　学校
+        <span class="arrow"><input type="text" name="location" readonly></span>
+        <span class="arrow"><input type="text" name="school" readonly></span>
+      </label>
+      <ul class="locationList"></ul>
+      <ul class="schoolsList"></ul>
+    </li>
+    <li id="company">
+      <label>就业单位
+        <span><input type="text" name="company"></span>
+      </label>
+    </li>
+  </ul>
+  <script src="javascript/data.js"></script>
+  <script src="javascript/index.js"></script>
+</body>
+</html>
