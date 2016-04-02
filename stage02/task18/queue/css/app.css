@@ -1,0 +1,17 @@
+.toolbar {
+  text-align: center;
+}
+
+#queue {
+  list-style: none;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+#queue li {
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid #233;
+}
