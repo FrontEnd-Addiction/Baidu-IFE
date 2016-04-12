@@ -1,0 +1,116 @@
+// modal
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 9999;
+
+  min-width: 30rem;
+  border: 1px solid $border-color;
+  background: $modal-bg-color;
+  padding: 1rem;
+  border-radius: 2px;
+
+  opacity: 0;
+  transition: all 1s;
+
+  &.active {
+    opacity: 1;
+    transition: all 1s;
+  }
+}
+
+// modal-header
+.modal-header {
+  border-bottom: 1px solid $border-color;
+  padding: .5rem;
+
+  display: flex;
+
+  .modal-title {
+    font-size: 2rem;
+    color: $text-color;
+    margin: 0;
+    flex: 1;
+  }
+
+  .modal-close {
+    font-size: 2rem;
+    text-align: right;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// modal body
+.modal-body {
+  padding: .5rem;
+
+  &.success {
+    color: $success;
+  }
+  &.info {
+    color: $info;
+  }
+  &.warning {
+    color: $warning;
+  }
+  &.error {
+    color: $error;
+  }
+}
+
+
+// modal footer
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  border-top: 1px solid $border-color;
+  padding-top: 1rem;
+
+  .modal-button {
+    color: $button-color;
+    padding: .6rem 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.success {
+      background: $success;
+    }
+    &.info {
+      background: $info;
+    }
+    &.warning {
+      background: $warning;
+    }
+    &.error {
+      background: $error;
+    }
+  }
+}
+
+// modal overlay
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: $overlay-bg-color;
+  z-index: 9998;
+
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    transition: all 1s;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/app.scss:css/app.css ",
+    "serve": "live-server --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modal"
+  ],
+  "author": "Drake Leung",
+  "license": "ISC"
+}
