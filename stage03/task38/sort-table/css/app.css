@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.pars-table {
+  border: 1px solid #cbcbcb;
+  border-collapse: collapse;
+}
+
+.pars-table thead {
+  background: #e0e0e0;
+  color: #000;
+  text-align: left;
+}
+
+.pars-table th,
+.pars-table td {
+  padding: 1rem 2.5rem;
+  border-left: 1px solid #cbcbcb;
+
+  position: relative;
+}
+
+.pars-table.borderd td {
+  border-bottom: 1px solid #cbcbcb;
+}
+.pars-table.striped tbody tr:nth-child(2n) {
+  background: #eee; 
+}
+
+/*  table heading arrow */
+th span {
+  content: '';
+  border: .6rem solid transparent;
+
+  position: absolute;
+  right: .8rem;
+}
+
+th span.asc {
+  border-top: .6rem solid #aaa;
+  top: 2rem;
+}
+th span.desc {
+  border-bottom: .6rem solid #aaa;
+  bottom: 2rem;
+}
+
+
+.pars-table td {
+  color: #777;
+}
