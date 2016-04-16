@@ -1,0 +1,74 @@
+
+/*
+* calendar
+*/
+.calendar {
+  border: 1px solid #ccc;
+}
+
+
+/*
+* calendar header
+*/
+.calendar-header {
+  background: #2875c7;
+  color: #fff;
+  padding: 1.2rem 1rem;
+  
+  display: flex;
+}
+
+.calendar-header select {
+  flex: 1;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+.calendar-header a {
+  cursor: pointer;
+}
+
+.calendar-header .next {
+  text-align: right;
+}
+
+
+/*
+* calendar body
+*/
+.calendar-weeks,
+.calendar-week {
+  display: flex;
+}
+
+.calendar-week-name,
+.calendar-day-name {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: .5rem .5rem;
+}
+
+.calendar-week-name:last-child,
+.calendar-day-name:last-child {
+  border-right: 0;
+}
+
+.calendar-week-name {
+  font-weight: bold;
+  color: #2875c7;
+}
+
+.calendar-day-name {
+  cursor: pointer;
+}
+.calendar-day-name:not(.isCurrentMonth) {
+  color: #ccc;
+}
+.calendar-day-name.isToday {
+  background: #E3F2FF;
+}
+.calendar-day-name.isSelected {
+  background: #2875c7;
+  color: #fff;
+}

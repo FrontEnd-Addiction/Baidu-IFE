@@ -1,0 +1,30 @@
+.datepicker {
+  position: relative;
+}
+
+.datepicker .calendar {
+  position: absolute; 
+  top: 20px;
+  left: 0;
+}
+
+.datepicker-control {
+  display: flex;
+  align-items: center;
+}
+
+.datepicker-icon {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url('../img/calendar.png');
+  
+  cursor: pointer;
+  margin-left: .5rem;
+}
+
+.datepicker-clean-btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}

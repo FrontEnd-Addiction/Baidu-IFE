@@ -1,0 +1,8 @@
+@import './calendar.css';
+@import './datepicker.css';
+
+* {box-sizing: border-box;}
+:root {font-size: 62.5%;}
+body {font-size: 1.6rem;}
+main {width: 300px;}
+
