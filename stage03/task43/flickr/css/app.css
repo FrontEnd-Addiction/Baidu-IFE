@@ -1,0 +1,10 @@
+main {
+  position: relative;
+  background: seagreen;
+  width: 1060px;
+}
+
+div {
+  position: absolute;
+  background: yellowgreen
+}
