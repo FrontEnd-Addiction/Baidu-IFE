@@ -42,7 +42,7 @@ function computeLayout (
         currentRow.addItem(item)
         
         if (currentRow.isLayoutComplete()) {
-          laidOutItems = [...laidOutItems, addRow(currentRow)]
+          laidOutItems = laidOutItems.concat(addRow(currentRow))
           currentRow = null
         }
       }
@@ -51,7 +51,7 @@ function computeLayout (
     
   if (currentRow && currentRow.getItems().length) {
     currentRow.forceComplete()
-    laidOutItems = [...laidOutItems, addRow(currentRow)]
+    laidOutItems = laidOutItems.concat(addRow(currentRow))
   }
   
   return {

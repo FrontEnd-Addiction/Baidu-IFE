@@ -1,10 +1,15 @@
-main {
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.album {
   position: relative;
-  background: seagreen;
+  background: mediumseagreen;
   width: 1060px;
 }
 
-div {
+.box {
   position: absolute;
   background: yellowgreen
 }
