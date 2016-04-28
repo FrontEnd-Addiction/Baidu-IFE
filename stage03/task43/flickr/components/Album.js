@@ -13,7 +13,7 @@ function renderPictures (picUrls) {
       h('div.box', {
         style: `width: ${width}px; height: ${height}px; top: ${top}px; left: ${left}px`
       }, h('img', {
-        src: `${picUrls[index].image.small}`,
+        'data-src': `${picUrls[index].image.small}`,
         style: 'width: 100%; height: 100%;',
         'data-large': `${picUrls[index].image.large}`,
       }))

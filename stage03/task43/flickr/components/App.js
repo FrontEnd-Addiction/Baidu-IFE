@@ -5,6 +5,11 @@
     .then(res => res.json())
     .then(pics => {
       container.appendChild(Album(pics))
+      
+      // lazy loading
+      laz({
+        selector: '.box img'
+      })
     })
    
   function fetchPictures (params) {
